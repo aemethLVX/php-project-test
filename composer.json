@@ -1,0 +1,39 @@
+{
+    "name": "aemeth/hexlet-php-project-test", 
+    "description": "Hexlet PHP project test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Aemeth",
+            "email": "aemeth.lvx@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "bin": [
+    	"bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
+    ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "files": [
+            "src/Settings.php",
+            "src/Engine.php",
+            "src/Games/BrainEven.php",
+            "src/Games/BrainCalc.php",
+            "src/Games/BrainGcd.php",
+            "src/Games/BrainProgression.php",
+            "src/Games/BrainPrime.php"
+        ]
+    }
+}
